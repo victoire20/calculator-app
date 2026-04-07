@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+
+@theme {
+  /** Background **/
+  --color-main-background: var(--main-bg);
+  --color-toggle-background: var(--toggle-bg);
+  --color-keypad-background: var(--keypad-bg);
+  --color-screen-background: var(--screen-bg);
+
+  /** Keys **/
+  --primary-color: var(--primary--key-bg);
+  --primary-color-shadow: var(--primary-key-shadow-bg);
+  --secondary-color: var(--secondary-key-bg);
+  --secondary-color-shadow: var(--secondary-key-shadow-bg);
+  --info-color: var(--info-key-bg);
+  --info-color-shadow: var(--info-key-shadow-bg);
+
+  /** Text **/
+  --color-header: var(--default-font-header);
+  --color-keypad: var(--default-font-keypad);
+  --color-equal: var(--default-font-equal);
+  --color-footer: var(--default-font-footer);
+  --color-link-footer: var(--default-font-link-footer);
+}
+
+
+/** Default Theme **/
+:root {
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --keypad-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(223, 31%, 20%);
+
+  --primary--key-bg: hsl(225, 21%, 49%);
+  --primary-key-shadow-bg: hsl(224, 28%, 35%);
+  --secondary-key-bg: hsl(6, 63%, 50%);
+  --secondary-key-shadow-bg: hsl(6, 70%, 34%);
+  --info-key-bg: hsl(0, 0%, 90%);
+  --info-key-shadow-bg: hsl(28, 16%, 65%);
+
+  --default-font-header: hsl(0, 100%, 100%);
+  --default-font-keypad: hsl(221, 14%, 31%);
+  --default-font-equal: hsl(0, 100%, 100%);
+  --default-font-footer: hsl(0, 100%, 100%);
+  --default-font-link-footer: hsl(228,45%,44%);
+}
+
+
+/** Light Theme **/
+[data-theme="light"] {
+  --main-bg: hsl(0, 0%, 90%);
+  --toggle-bg: hsl(0, 5%, 81%);
+  --keypad-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+
+  --primary--key-bg: hsl(185, 42%, 37%);
+  --primary-key-shadow-bg: hsl(185, 58%, 25%);
+  --secondary-key-bg: hsl(25, 98%, 40%);
+  --secondary-key-shadow-bg: hsl(25, 99%, 27%);
+  --info-key-bg: hsl(0, 0%, 90%);
+  --info-key-shadow-bg: hsl(35, 11%, 61%);
+
+  --default-font-header: hsl(60, 10%, 19%);
+  --default-font-keypad: hsl(60, 10%, 19%);
+  --default-font-equal: hsl(0, 100%, 100%);
+  --default-font-footer: hsl(60, 10%, 19%);
+  --default-font-link-footer: hsl(228,45%,44%);
+}
+
+
+/** Purple Theme **/
+[data-theme="purple"] {
+  --main-bg: hsl(268, 75%, 9%);
+  --toggle-bg: hsl(268, 71%, 12%);
+  --keypad-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+
+  --primary--key-bg: hsl(281, 89%, 26%);
+  --primary-key-shadow-bg: hsl(285, 91%, 52%);
+  --secondary-key-bg: hsl(176, 100%, 44%);
+  --secondary-key-shadow-bg: hsl(177, 92%, 70%);
+  --info-key-bg: hsl(268, 47%, 21%);
+  --info-key-shadow-bg: hsl(290, 70%, 36%);
+
+  --default-font-header: hsl(52, 100%, 62%);
+  --default-font-keypad: hsl(52, 100%, 62%);
+  --default-font-equal: hsl(198, 20%, 13%);
+  --default-font-footer: hsl(0, 100%, 100%);
+  --default-font-link-footer: hsl(228,45%,44%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  overflow-x: hidden;
+}
